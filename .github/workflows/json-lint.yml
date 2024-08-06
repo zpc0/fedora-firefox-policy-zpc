@@ -1,5 +1,6 @@
 name: Lint json file
 on: [push]
+permissions: {}
 jobs:
   json-lint:
     runs-on: ubuntu-24.04
