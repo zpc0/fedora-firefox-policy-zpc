@@ -20,8 +20,12 @@ Mozilla Firefox
 %build
 
 %install
+mkdir -p %{buildroot}%{_libdir}/firefox/distribution
+install -m 0755 %{SOURCE0} %{buildroot}%{_libdir}/firefox/distribution/policies.json
 
 %files
+%license COPYING
+%{_libdir}/firefox/distribution/policies.json
 
 %changelog
 %autochangelog
