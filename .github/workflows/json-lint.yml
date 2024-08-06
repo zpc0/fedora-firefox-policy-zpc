@@ -1,0 +1,16 @@
+name: Lint json file
+on: [push]
+jobs:
+  json-lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install ESLint and plugin
+        run: npm install --save-dev eslint eslint-plugin-jsonc
+      - name: Run ESLint
+        run: npx eslint .
