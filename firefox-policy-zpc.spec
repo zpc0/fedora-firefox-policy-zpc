@@ -25,7 +25,7 @@ mkdir -p %{buildroot}%{_libdir}/firefox/distribution
 install -m 0644 %{SOURCE0} %{buildroot}%{_libdir}/firefox/distribution/policies.json
 
 %files
-%license COPYING
+%license %{SOURCE1}
 %{_libdir}/firefox/distribution/policies.json
 
 %changelog
