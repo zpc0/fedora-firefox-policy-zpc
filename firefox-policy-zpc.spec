@@ -1,5 +1,5 @@
 Name:		firefox-policy-zpc
-Version:	0.1.0
+Version:	1.0.0
 Release:	%autorelease
 Summary:	Firefox policies for zpc system
 
