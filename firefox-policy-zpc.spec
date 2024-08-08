@@ -6,6 +6,7 @@ Summary:	Firefox policies for zpc system
 License:	GPL-3.0-or-later
 URL:		https://zpc.st
 Source0:	policies.json
+Source1:	COPYING
 
 BuildArch:	noarch
 
